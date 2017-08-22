@@ -7,10 +7,10 @@ from steamauth import RedirectToSteamSignIn, GetSteamID64
 def index(request):
     return HttpResponse("Hi, Welcome to Test App!")
 
-def Login(request):
+def login(request):
     return RedirectToSteamSignIn('/process')
 
-def LoginProcess(request):
+def login_process(request):
     steamid = GetSteamID64(request.GET)
     if steamid == False:
         return redirect('/login_failed')
