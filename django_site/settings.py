@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Assign ABSOLUTE_URL for redirection, default is localhost
+ABSOLUTE_URL = '127.0.0.1:8000/test_app'
 
 # Application definition
 
